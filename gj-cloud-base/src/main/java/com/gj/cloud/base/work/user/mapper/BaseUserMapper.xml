@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace和里面标签的id两者都是为了动态代理而需要的-->
+<mapper namespace="com.gj.cloud.base.work.user.mapper.BaseUserMapper">
+    <insert id="insert">
+        INSERT INTO data_center.BASE_USER
+        (ID, USERNAME, PASSWORD, NICKNAME, SEX, ORGID, ORGNAME, BIRTHDAY, EMAIL, MOBILE, TEL, POST, TITLE, EDUCATION,
+         IDCARD, PASSWORDUPDATEDTIME, STATUS, CREATEDBYID, CREATEDBYNAME, CREATEDTIME, CREATEDBYORGID, CREATEDBYORGNAME)
+        VALUES (#{id}, #{userName}, #{password}, #{nickName}, #{sex}, #{orgId}, #{orgName}, #{birthday}, #{email},
+                #{mobile}, #{tel}, #{post}, #{title}, #{education}, #{idCard}, #{passwordUpdatedTime}, #{status},
+                #{createdById}, #{createdByName}, #{createdTime}, #{createdByOrgId}, #{createdByOrgName});
+    </insert>
+    <delete id="delete">
+        DELETE
+        FROM data_center.BASE_USER
+        WHERE ID = #{id};
+    </delete>
+    <update id="update">
+        UPDATE data_center.BASE_USER
+        SET USERNAME=#{userName},
+            PASSWORD=#{password},
+            NICKNAME=#{nickName},
+            SEX=#{sex},
+            ORGID=#{orgId},
+            ORGNAME=#{orgName},
+            BIRTHDAY=#{birthday},
+            EMAIL=#{email},
+            MOBILE=#{mobile},
+            TEL=#{tel},
+            POST=#{post},
+            TITLE=#{title},
+            EDUCATION=#{education},
+            IDCARD=#{idCard},
+            PASSWORDUPDATEDTIME=#{passwordUpdatedTime},
+            STATUS=#{status},
+            CREATEDBYID=#{createdById},
+            CREATEDBYNAME=#{createdByName},
+            CREATEDTIME=#{createdTime},
+            CREATEDBYORGID=#{createdByOrgId},
+            CREATEDBYORGNAME=#{createdByOrgName}
+        WHERE ID = #{id};
+    </update>
+    <select id="selectById" resultType="com.gj.cloud.base.work.user.bean.BaseUserBean">
+        SELECT * FROM BASE_USER WHERE ID = #{id};
+    </select>
+    <select id="selectPagination" resultType="map">
+        SELECT * FROM BASE_USER WHERE ID = #{id};
+    </select>
+</mapper>

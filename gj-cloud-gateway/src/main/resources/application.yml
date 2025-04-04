@@ -1,0 +1,45 @@
+server:
+  port: 8990
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_DISCOVERY_SERVER_ADDR:localhost:8848} # Nacos 服务器地址
+        namespace: dev
+        group: CLOUD_DEV_GROUP
+#    gateway:
+#      routes:
+#        - id: base_route # 路由 id,需要唯一
+#          uri: lb://base # 路由的目标地址 lb：负载均衡。双斜线后面的是服务名
+##          uri: https://example.org # 路由的目标地址（固定地址）
+#          predicates: # 路由断言，判断请求是否符合路由规则的条件
+#            - Path=/base/**
+#          filters:
+#            - AddRequestHeader=Truth
+#        - id: security-route
+#          uri: lb://security
+#          predicates:
+#            - Path=/security/**
+##            - Cookie=mycookie,mycookievalue
+##            -
+#      default-filters:
+#        - AddRequestHeader=Truth
+#
+#      # 全局跨域处理
+#      globalcors:
+#        add-to-simple-url-handler-mapping: true # 解决options请求拦截器问题
+#        cors-configurations:
+#          '[/**]':
+#            allowedOrigins: # 允许跨域的网站
+#              - "http://localhost:8080"
+#              - "https://www.example.org"
+#            allowedMethods: # 允许跨域的ajax请求
+#              - "GET"
+#              - "POST"
+#              - "DELETE"
+#              - "PUT"
+#              - "OPTIONS"
+#            allowedHeaders: "*" # 允许在请求中携带的头信息
+#            allowCredentials: true # 是否允许携带 cookie
+#            maxAge: 60000 # 本次跨域检测的有效期

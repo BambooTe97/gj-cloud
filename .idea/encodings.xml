@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gj-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-ai/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+  </component>
+</project>

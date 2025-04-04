@@ -1,0 +1,23 @@
+server:
+  port: 8999
+
+
+spring:
+  config:
+    import:
+  cloud:
+    nacos:
+      # Nacos Config 配置项，对应 NacosConfigProperties 配置属性类
+      config:
+        server-addr: ${NACOS_CONFIG_SERVER_ADDR:localhost:8848} # Nacos 服务器地址
+        namespace: ${NACOS_CONFIG_NAMESPACE:dev} # 使用的 Nacos 的命名空间，默认为 null
+#        server-addr: 192.168.0.104:8848
+#        namespace: dev
+        shared-configs:
+          - data-id: common.yaml
+            group: DEFAULT_GROUP
+        file-extension: yaml # 使用的 Nacos 配置集的 dataId 的文件拓展名，同时也是 Nacos 配置集的配置格式，默认为 properties
+        enabled: true
+        import-check:
+          enabled: false
+        username:
