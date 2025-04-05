@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gj-auth/gj-auth.iml" filepath="$PROJECT_DIR$/gj-auth/gj-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gj-cloud-auth/gj-cloud-auth.iml" filepath="$PROJECT_DIR$/gj-cloud-auth/gj-cloud-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/gj-cloud-base/gj-cloud-base.iml" filepath="$PROJECT_DIR$/gj-cloud-base/gj-cloud-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/gj-cloud-common/gj-cloud-common.iml" filepath="$PROJECT_DIR$/gj-cloud-common/gj-cloud-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/gj-cloud-gateway/gj-cloud-gateway.iml" filepath="$PROJECT_DIR$/gj-cloud-gateway/gj-cloud-gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gj-cloud-security/gj-cloud-security.iml" filepath="$PROJECT_DIR$/gj-cloud-security/gj-cloud-security.iml" />
     </modules>
   </component>
 </project>

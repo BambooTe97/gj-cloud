@@ -9,17 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gj-cloud-ai" />
         <module name="gj-cloud-security" />
-        <module name="gj-auth" />
         <module name="gj-cloud-common" />
         <module name="gj-cloud-gateway" />
         <module name="gj-cloud-base" />
+        <module name="gj-cloud-auth" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="gj-auth" options="-parameters" />
       <module name="gj-cloud-ai" options="-parameters" />
+      <module name="gj-cloud-auth" options="-parameters" />
       <module name="gj-cloud-base" options="-parameters" />
       <module name="gj-cloud-common" options="-parameters" />
       <module name="gj-cloud-gateway" options="-parameters" />
