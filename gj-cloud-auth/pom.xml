@@ -9,7 +9,7 @@
         <version>2025.0.0</version>
     </parent>
 
-    <artifactId>gj-auth</artifactId>
+    <artifactId>gj-cloud-auth</artifactId>
     <version>2025.0.0</version>
     <name>gj-authcenter</name>
     <description>认证中心,专门给网关授权认证的</description>

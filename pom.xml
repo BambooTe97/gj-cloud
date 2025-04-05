@@ -22,7 +22,7 @@
 
         <module>gj-cloud-base</module>
         <module>gj-cloud-gateway</module>
-        <module>gj-auth</module>
+        <module>gj-cloud-auth</module>
         <module>gj-cloud-ai</module>
     </modules>
 
