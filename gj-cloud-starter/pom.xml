@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.gj.cloud</groupId>
+        <artifactId>gj-cloud</artifactId>
+        <version>2025.0.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <artifactId>gj-cloud-starter</artifactId>
+    <version>2025.0.0</version>
+    <name>gj-cloud-starter</name>
+    <description>gj-cloud-starter</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>gj-cloud-common</module>
+        <module>gj-cloud-autoconfigure</module>
+        <module>gj-cloud-security</module>
+    </modules>
+
+</project>

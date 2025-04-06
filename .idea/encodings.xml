@@ -4,9 +4,11 @@
     <file url="file://$PROJECT_DIR$/gj-cloud-ai/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gj-cloud-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gj-cloud-base/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gj-cloud-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gj-cloud-gateway/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gj-cloud-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>
