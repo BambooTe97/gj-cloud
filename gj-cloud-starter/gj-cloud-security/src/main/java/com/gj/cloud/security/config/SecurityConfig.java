@@ -3,6 +3,8 @@ package com.gj.cloud.security.config;
 import com.gj.cloud.security.component.JwtAuthenticationTokenFilter;
 import com.gj.cloud.security.component.RestAuthenticationEntryPoint;
 import com.gj.cloud.security.component.RestfulAccessDeniedHandler;
+import com.gj.cloud.security.handler.FrameworkAuthenticationFailureHandler;
+import com.gj.cloud.security.handler.FrameworkAuthenticationSuccessHandler;
 import com.gj.cloud.security.util.JwtTokenUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +13,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
@@ -36,9 +40,10 @@ public class SecurityConfig {
                 .sessionManagement(AbstractHttpConfigurer::disable)
                 .logout(AbstractHttpConfigurer::disable) // 禁用登出
                 .authorizeHttpRequests((authorize) -> authorize
+//                        .requestMatchers("/api/v1/users/queries").permitAll()
                         .requestMatchers("/user/login").permitAll() // 只有 /user/login 的 url 可以任意访问请求
-                        .requestMatchers("/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/**").hasRole("USER")
+//                        .requestMatchers("/admin/**").hasRole("ADMIN")
+//                        .requestMatchers("/**").hasRole("USER")
                         // 任何请求都需要身份验证
                         .anyRequest().authenticated())
                 // 异常处理
@@ -48,6 +53,16 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
+    }
+
+    @Bean
+    public AuthenticationSuccessHandler authenticationSuccessHandler() {
+        return new FrameworkAuthenticationSuccessHandler();
+    }
+
+    @Bean
+    public AuthenticationFailureHandler authenticationFailureHandler() {
+        return new FrameworkAuthenticationFailureHandler();
     }
 
     @Bean

@@ -16,11 +16,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 public class WebSecurityConfig extends SecurityConfig {
     @Qualifier("baseUserServiceImpl")
     @Autowired
-    private BaseUserService baseUserSerivce;
+    private BaseUserService baseUserService;
 
     @Bean
     public UserDetailsService userDetailsService() {
         //获取登录用户信息
-        return username -> baseUserSerivce.loadUserByUsername(username);
+        return username -> baseUserService.loadUserByUsername(username);
     }
 }
