@@ -20,7 +20,7 @@ public class RedisAutoConfiguration implements BeanClassLoaderAware {
         redisTemplate.setHashKeySerializer(RedisSerializer.string());
         redisTemplate.setKeySerializer(RedisSerializer.string());
 
-        RedisSerializer<Object> redisValueSerial = RedisSerializer.java(classLoader);
+        final RedisSerializer<Object> redisValueSerial = RedisSerializer.java(classLoader);
         redisTemplate.setHashValueSerializer(redisValueSerial);
         redisTemplate.setHashValueSerializer(redisValueSerial);
 

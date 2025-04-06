@@ -1,19 +1,14 @@
 package com.gj.cloud.base.work.user.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.gj.cloud.base.constant.RequestMapperConstant;
 import com.gj.cloud.base.work.user.bean.BaseUserBean;
 import com.gj.cloud.base.work.user.bean.BaseUserDTO;
+import com.gj.cloud.common.api.CommonPage;
+import com.gj.cloud.common.api.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,7 +22,9 @@ public interface BaseUserController {
 
     @PostMapping("/queries")
     @ApiOperation("分页查询用户列表")
-    PageInfo<BaseUserBean> selectPagination(@ApiParam("标准用户查询信息") @RequestBody BaseUserDTO dto);
+    CommonResult<CommonPage<BaseUserBean>> selectPagination(@ApiParam("标准用户查询信息") @RequestBody BaseUserDTO dto,
+                                                            @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
+                                                            @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum);
 
     @GetMapping("/{id}")
     @ApiOperation("查询用户详情")

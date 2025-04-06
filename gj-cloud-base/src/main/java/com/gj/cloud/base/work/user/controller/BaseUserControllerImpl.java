@@ -1,9 +1,10 @@
 package com.gj.cloud.base.work.user.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.gj.cloud.base.work.user.bean.BaseUserBean;
 import com.gj.cloud.base.work.user.bean.BaseUserDTO;
 import com.gj.cloud.base.work.user.service.BaseUserService;
+import com.gj.cloud.common.api.CommonPage;
+import com.gj.cloud.common.api.CommonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,8 +22,8 @@ public class BaseUserControllerImpl implements BaseUserController {
     }
 
     @Override
-    public PageInfo<BaseUserBean> selectPagination(BaseUserDTO dto) {
-        return baseUserService.selectPagination(dto);
+    public CommonResult<CommonPage<BaseUserBean>> selectPagination(BaseUserDTO dto, Integer pageSize, Integer pageNum) {
+        return baseUserService.selectPagination(dto, pageSize, pageNum);
     }
 
     @Override

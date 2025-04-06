@@ -2,7 +2,6 @@ package com.gj.cloud.common.user.mapper;
 
 import com.gj.cloud.common.user.bean.UmsMemberBean;
 import com.gj.cloud.common.user.bean.UmsMemberExample;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

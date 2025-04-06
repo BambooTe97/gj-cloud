@@ -1,1 +1,2 @@
-com.gj.cloud.common.redis.RedisManager
+com.gj.cloud.autoconfigure.config.RedisAutoConfiguration
+com.gj.cloud.autoconfigure.redis.RedisManager

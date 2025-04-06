@@ -6,6 +6,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.gj.cloud.base"})
+@MapperScan({"com.gj.cloud"})
 public class MybatisConfig {
 }

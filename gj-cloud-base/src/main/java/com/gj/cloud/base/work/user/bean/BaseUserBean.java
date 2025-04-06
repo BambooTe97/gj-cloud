@@ -20,13 +20,13 @@ public class BaseUserBean implements Serializable {
     private String id;
 
     @ApiModelProperty("用户名称")
-    private String userName;
+    private String username;
 
     @ApiModelProperty("密码")
     private String password;
 
     @ApiModelProperty("昵称")
-    private String nickName;
+    private String nickname;
 
     @ApiModelProperty("性别")
     private String sex;
@@ -63,6 +63,9 @@ public class BaseUserBean implements Serializable {
 
     @ApiModelProperty("密码修改时间")
     private LocalDateTime passwordUpdatedTime;
+
+    @ApiModelProperty("登录时间")
+    private LocalDateTime loginTime;
 
     @ApiModelProperty("用户状态 (停用-deprecated 正常-activated 锁定-locked)")
     private String status;

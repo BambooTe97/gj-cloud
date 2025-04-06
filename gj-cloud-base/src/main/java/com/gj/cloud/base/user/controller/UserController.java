@@ -2,7 +2,6 @@ package com.gj.cloud.base.user.controller;
 
 import com.gj.cloud.base.user.bean.UserBean;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;

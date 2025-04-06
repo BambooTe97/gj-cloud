@@ -3,7 +3,10 @@ package com.gj.cloud.base.work.user.mapper;
 import com.github.pagehelper.PageInfo;
 import com.gj.cloud.base.work.user.bean.BaseUserBean;
 import com.gj.cloud.base.work.user.bean.BaseUserDTO;
+import com.gj.cloud.base.work.user.bean.UmsAdminExample;
 import org.mapstruct.Mapper;
+
+import java.util.List;
 
 @Mapper
 public interface BaseUserMapper {
@@ -11,8 +14,6 @@ public interface BaseUserMapper {
      * 新增
      */
     int insert(BaseUserBean user);
-
-    PageInfo<BaseUserBean> selectPagination(BaseUserDTO dto);
 
     BaseUserBean selectById(Long id);
 
@@ -25,4 +26,6 @@ public interface BaseUserMapper {
      * 修改
      */
     int update(BaseUserBean user);
+
+    List<BaseUserBean> selectByExample(UmsAdminExample example);
 }

@@ -3,6 +3,38 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace和里面标签的id两者都是为了动态代理而需要的-->
 <mapper namespace="com.gj.cloud.base.work.user.mapper.BaseUserMapper">
+    <resultMap id="BaseResultMap" type="com.gj.cloud.base.work.user.bean.BaseUserBean">
+        <id column="id" jdbcType="VARCHAR" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+        <result column="sex" jdbcType="VARCHAR" property="sex" />
+        <result column="orgid" jdbcType="VARCHAR" property="orgId" />
+        <result column="orgname" jdbcType="VARCHAR" property="orgName" />
+        <result column="birthday" jdbcType="TIMESTAMP" property="birthday" />
+        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+        <result column="tel" jdbcType="VARCHAR" property="tel" />
+        <result column="post" jdbcType="VARCHAR" property="post" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="education" jdbcType="VARCHAR" property="education" />
+        <result column="idcard" jdbcType="VARCHAR" property="idCard" />
+        <result column="passwordupdatedtime" jdbcType="TIMESTAMP" property="passwordUpdatedTime" />
+        <result column="logintime" jdbcType="TIMESTAMP" property="loginTime" />
+        <result column="status" jdbcType="VARCHAR" property="status" />
+        <result column="createdbyid" jdbcType="VARCHAR" property="createdById" />
+        <result column="createdbyname" jdbcType="VARCHAR" property="createdByName" />
+        <result column="createdtime" jdbcType="TIMESTAMP" property="createdTime" />
+        <result column="createdbyorgid" jdbcType="VARCHAR" property="createdByOrgId" />
+        <result column="createdbyorgname" jdbcType="VARCHAR" property="createdByOrgName" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, username, password, nickname, sex, orgid, orgname,
+          birthday, email, mobile, tel, post, title, education, idcard,
+          asswordupdatedtime, logintime, status, createdbyid, createdbyname,
+          createdtime, createdbyorgid, createdbyorgname
+    </sql>
     <insert id="insert">
         INSERT INTO data_center.BASE_USER
         (ID, USERNAME, PASSWORD, NICKNAME, SEX, ORGID, ORGNAME, BIRTHDAY, EMAIL, MOBILE, TEL, POST, TITLE, EDUCATION,
@@ -44,7 +76,48 @@
     <select id="selectById" resultType="com.gj.cloud.base.work.user.bean.BaseUserBean">
         SELECT * FROM BASE_USER WHERE ID = #{id};
     </select>
-    <select id="selectPagination" resultType="map">
-        SELECT * FROM BASE_USER WHERE ID = #{id};
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <select id="selectByExample" parameterType="com.gj.cloud.base.work.user.bean.UmsAdminExample" resultMap="BaseResultMap">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from ums_admin
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
     </select>
 </mapper>

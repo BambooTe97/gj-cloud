@@ -6,7 +6,6 @@
         <groupId>com.gj.cloud</groupId>
         <artifactId>gj-cloud-starter</artifactId>
         <version>2025.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>gj-cloud-autoconfigure</artifactId>
@@ -15,10 +14,6 @@
     <description>gj-cloud-autoconfigure</description>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
     </dependencies>
 
     <build>

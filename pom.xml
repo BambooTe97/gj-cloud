@@ -15,7 +15,6 @@
     <version>2025.0.0</version>
     <packaging>pom</packaging>
 
-
     <modules>
         <module>gj-cloud-starter</module>
 
@@ -32,7 +31,7 @@
         <spring-cloud-bootstrap.version>4.2.0</spring-cloud-bootstrap.version>
         <spring-boot.version>3.4.4</spring-boot.version>
 
-        <!--        2023.0.3.2-->
+        <!-- 2023.0.3.2-->
         <spring-cloud-alibaba.version>2023.0.1.2</spring-cloud-alibaba.version>
 
         <mysql.version>8.2.0</mysql.version>
@@ -55,7 +54,11 @@
     <dependencies>
         <dependency>
             <groupId>com.gj.cloud</groupId>
-            <artifactId>gj-cloud-starter</artifactId>
+            <artifactId>gj-cloud-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
         <dependency>
@@ -121,6 +124,22 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.gj.cloud</groupId>
+                <artifactId>gj-cloud-common</artifactId>
+                <version>${gj-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gj.cloud</groupId>
+                <artifactId>gj-cloud-autoconfigure</artifactId>
+                <version>${gj-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gj.cloud</groupId>
+                <artifactId>gj-cloud-security</artifactId>
+                <version>${gj-cloud.version}</version>
+            </dependency>
+
             <!--Spring Cloud 相关依赖-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -133,22 +152,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
                 <version>3.4.4</version>
-            </dependency>
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-starter-oauth2</artifactId>-->
-<!--                <version>2.2.5.RELEASE</version>-->
-<!--            </dependency>-->
-
-            <dependency>
-                <groupId>com.gj.cloud</groupId>
-                <artifactId>gj-cloud-starter</artifactId>
-                <version>${gj-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.gj.cloud</groupId>
-                <artifactId>gj-cloud-security</artifactId>
-                <version>${gj-cloud.version}</version>
             </dependency>
 
             <dependency>

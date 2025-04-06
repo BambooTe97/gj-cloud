@@ -25,7 +25,7 @@
       <module name="gj-cloud-base" options="-parameters" />
       <module name="gj-cloud-common" options="-parameters" />
       <module name="gj-cloud-gateway" options="-parameters" />
-      <module name="gj-cloud-security" options="" />
+      <module name="gj-cloud-security" options="-parameters" />
       <module name="gj-cloud-starter" options="" />
     </option>
   </component>

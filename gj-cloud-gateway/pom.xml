@@ -6,7 +6,6 @@
 		<groupId>com.gj.cloud</groupId>
 		<artifactId>gj-cloud</artifactId>
 		<version>2025.0.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<artifactId>gj-cloud-gateway</artifactId>
