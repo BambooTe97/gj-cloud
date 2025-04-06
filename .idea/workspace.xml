@@ -4,40 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a44289c-d3c0-4b21-a7d2-7df3b913c7d7" name="Changes" comment="提交.git">
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/java/com/gj/cloud/autoconfigure/config/RedisAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4a44289c-d3c0-4b21-a7d2-7df3b913c7d7" name="Changes" comment="调整项目架构">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/api/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/api/CommonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/api/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/api/IErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/api/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/api/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/exception/GateWayException.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/exception/GateWayException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/id/GjIdHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/id/GjIdHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/id/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/id/SnowflakeIdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/redis/RedisManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/java/com/gj/cloud/autoconfigure/redis/RedisManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/user/bean/UmsMemberBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/user/bean/UmsMemberBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/user/bean/UmsMemberExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/user/bean/UmsMemberExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/user/mapper/UmsMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/user/mapper/UmsMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/user/mapper/UmsMemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/user/mapper/UmsMemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/java/com/gj/cloud/common/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/utils/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-common/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/component/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/component/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/component/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/component/RestAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/component/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/component/RestfulAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/config/IgnoreUrlsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/IgnoreUrlsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SpringSecurityNode.md" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SpringSecurityNode.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/main/java/com/gj/cloud/security/util/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/util/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-security/src/test/java/com/gj/cloud/security/GjCloudSecurityApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +93,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GjCloudBaseApplication">
+  <component name="RunManager" selected="Spring Boot.GjCloudAuthApplication">
     <configuration name="GjCloudAiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="gj-cloud-ai" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.gj.cloud.gjcloudai.GjCloudAiApplication" />
@@ -200,7 +168,7 @@
       <workItem from="1742611434843" duration="3778000" />
       <workItem from="1742615418456" duration="5266000" />
       <workItem from="1742735558378" duration="43657000" />
-      <workItem from="1743868040258" duration="3700000" />
+      <workItem from="1743868040258" duration="4405000" />
     </task>
     <task id="LOCAL-00001" summary="重命名auth服务">
       <option name="closed" value="true" />
@@ -218,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743868355183</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="调整项目架构">
+      <option name="closed" value="true" />
+      <created>1743910141306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743910141306</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="重命名auth服务" />
     <MESSAGE value="提交.git" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交.git" />
+    <MESSAGE value="调整项目架构" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整项目架构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
