@@ -1,2 +1,4 @@
 com.gj.cloud.autoconfigure.config.RedisAutoConfiguration
 com.gj.cloud.autoconfigure.redis.RedisManager
+com.gj.cloud.security.config.SecurityConfig
+com.gj.cloud.common.spring.SpringContextHolder

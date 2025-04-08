@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -16,6 +17,7 @@ public class BaseUserBean implements Serializable {
 
     @Serial
     private static final long serialVersionUID = -7348915255286348144L;
+    @Id
     @ApiModelProperty("用户编码")
     private String id;
 
@@ -67,7 +69,7 @@ public class BaseUserBean implements Serializable {
     @ApiModelProperty("登录时间")
     private LocalDateTime loginTime;
 
-    @ApiModelProperty("用户状态 (停用-deprecated 正常-activated 锁定-locked)")
+    @ApiModelProperty("用户状态 (停用-deprecated-0 正常-activated-1 锁定-locked-2)")
     private String status;
 
     private String createdById;

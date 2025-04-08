@@ -6,23 +6,13 @@
         <groupId>com.gj.cloud</groupId>
         <artifactId>gj-cloud-starter</artifactId>
         <version>2025.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>gj-cloud-autoconfigure</artifactId>
     <version>2025.0.0</version>
     <name>gj-cloud-autoconfigure</name>
     <description>gj-cloud-autoconfigure</description>
-
-    <dependencies>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <packaging>jar</packaging>
 
 </project>

@@ -8,10 +8,12 @@ import com.gj.cloud.security.handler.FrameworkAuthenticationSuccessHandler;
 import com.gj.cloud.security.util.JwtTokenUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -20,8 +22,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 /**
  * 对SpringSecurity的配置的扩展，支持自定义白名单资源路径和查询用户逻辑
  */
-//@Configuration
-//@EnableWebSecurity
+@Configuration
+@EnableWebSecurity
 public class SecurityConfig {
 
     /**
@@ -39,8 +41,14 @@ public class SecurityConfig {
                 .cors(AbstractHttpConfigurer::disable) // 跨域请求
                 .sessionManagement(AbstractHttpConfigurer::disable)
                 .logout(AbstractHttpConfigurer::disable) // 禁用登出
+                .headers(AbstractHttpConfigurer::disable)
+                // 不使用 session
+                .sessionManagement(sessionManagement ->
+                        sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+
                 .authorizeHttpRequests((authorize) -> authorize
-//                        .requestMatchers("/api/v1/users/queries").permitAll()
+                        .requestMatchers("/api/v1/home/info").permitAll()
+                        .requestMatchers("/api/v1/users/queries").permitAll()
                         .requestMatchers("/user/login").permitAll() // 只有 /user/login 的 url 可以任意访问请求
 //                        .requestMatchers("/admin/**").hasRole("ADMIN")
 //                        .requestMatchers("/**").hasRole("USER")
@@ -73,6 +81,11 @@ public class SecurityConfig {
     @Bean
     public JwtTokenUtil jwtTokenUtil() {
         return new JwtTokenUtil();
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 
     @Bean

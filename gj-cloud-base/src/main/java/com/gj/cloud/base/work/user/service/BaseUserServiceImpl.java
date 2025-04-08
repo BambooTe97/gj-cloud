@@ -1,6 +1,9 @@
 package com.gj.cloud.base.work.user.service;
 
 import com.github.pagehelper.PageHelper;
+import com.gj.cloud.autoconfigure.redis.RedisManager;
+import com.gj.cloud.base.properties.UserProperties;
+import com.gj.cloud.base.work.user.UserStatusEnum;
 import com.gj.cloud.base.work.user.bean.AdminUserDetails;
 import com.gj.cloud.base.work.user.bean.BaseUserBean;
 import com.gj.cloud.base.work.user.bean.BaseUserDTO;
@@ -9,8 +12,10 @@ import com.gj.cloud.base.work.user.mapper.BaseUserMapper;
 import com.gj.cloud.common.api.CommonPage;
 import com.gj.cloud.common.api.CommonResult;
 import com.gj.cloud.common.user.bean.UmsPermission;
+import com.gj.cloud.security.bean.SecurityOAuth2User;
+import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
@@ -19,10 +24,15 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service("baseUserServiceImpl")
+@EnableConfigurationProperties(UserProperties.class)
+@RequiredArgsConstructor
 public class BaseUserServiceImpl implements BaseUserService {
 
-    @Autowired
-    private BaseUserMapper mapper;
+    private static final String REDIS_KEY_PREFIX_PASSWORD_ERROR_ACCOUNT_LOCKED = "oauth2::password_error_account_locked";
+
+    private final BaseUserMapper mapper;
+    private final RedisManager redisManager;
+    private final UserProperties userProperties;
 
     @Override
     @Transactional
@@ -69,6 +79,33 @@ public class BaseUserServiceImpl implements BaseUserService {
             return adminList.get(0);
         }
         return null;
+    }
+
+    @Override
+    public SecurityOAuth2User selectSecurityOAuth2User(String username) {
+        BaseUserBean loginUser = mapper.queryUserByUsername(username);
+        if (loginUser == null) {
+            return null;
+        }
+
+        SecurityOAuth2User securityUser = new SecurityOAuth2User();
+        securityUser.setLoginId(loginUser.getId());
+        securityUser.setLoginName(loginUser.getUsername());
+        securityUser.setOrgId(loginUser.getOrgId());
+        securityUser.setOrgName(loginUser.getOrgName());
+        securityUser.setPassword(loginUser.getPassword());
+//        securityUser.setAccountExpired(DateTimeUtils.isBefore(loginUser.getExpiryDate(), LocalDateTime.now()));
+        securityUser.setDisabled(UserStatusEnum.USER_STATUS_DEPRECATED.getCode().equalsIgnoreCase(loginUser.getStatus()));
+
+        if (redisManager.isExists(REDIS_KEY_PREFIX_PASSWORD_ERROR_ACCOUNT_LOCKED, loginUser.getId())
+                && !redisManager.isExpire(REDIS_KEY_PREFIX_PASSWORD_ERROR_ACCOUNT_LOCKED, loginUser.getId())) {
+            securityUser.setAccountLocked(true);
+            securityUser.setLockedMaxMinutes(userProperties.getLockedMaxMinutes());
+        } else if (UserStatusEnum.USER_STATUS_LOCKED.getCode().equalsIgnoreCase(loginUser.getStatus())) {
+            securityUser.setAccountLocked(true);
+        }
+
+        return securityUser;
     }
 
     @Override

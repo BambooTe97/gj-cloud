@@ -6,12 +6,14 @@
         <groupId>com.gj.cloud</groupId>
         <artifactId>gj-cloud</artifactId>
         <version>2025.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>gj-cloud-base</artifactId>
     <version>2025.0.0</version>
     <name>gj-cloud-base</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/e-iceblue/spire.doc -->
@@ -26,6 +28,10 @@
 <!--            <artifactId>spire.pdf</artifactId>-->
 <!--            <version>10.12.10</version>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>com.gj.cloud</groupId>
+            <artifactId>gj-cloud-common</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

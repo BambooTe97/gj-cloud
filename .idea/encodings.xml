@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gj-cloud-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gj-cloud-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 package com.gj.cloud.base.work.user.service;
 
-import com.github.pagehelper.PageInfo;
 import com.gj.cloud.base.work.user.bean.BaseUserBean;
 import com.gj.cloud.base.work.user.bean.BaseUserDTO;
 import com.gj.cloud.common.api.CommonPage;
 import com.gj.cloud.common.api.CommonResult;
 import com.gj.cloud.common.user.bean.UmsPermission;
+import com.gj.cloud.security.bean.SecurityOAuth2User;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.List;
@@ -26,6 +26,8 @@ public interface BaseUserService {
      * 根据用户名获取后台管理员
      */
     BaseUserBean getAdminByUsername(String username);
+
+    SecurityOAuth2User selectSecurityOAuth2User(String username);
     /**
      * 获取用户所有权限（包括角色权限和+-权限）
      */

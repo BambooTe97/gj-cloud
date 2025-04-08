@@ -4,32 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a44289c-d3c0-4b21-a7d2-7df3b913c7d7" name="Changes" comment="新增用户">
-      <change afterPath="$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/config/JwtCAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/cache/MemoryCacheHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/converter/IdentityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/converter/exception/ConversionFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/converter/exception/ConverterNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/spring/SpringContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/ArithUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/ArrayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/ClassUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/ConvertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/DateTimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/JacksonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/NumberUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/ReflectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/handler/FrameworkAuthenticationFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/handler/FrameworkAuthenticationSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/util/ResponseUtils.java" afterDir="false" />
+    <list default="true" id="4a44289c-d3c0-4b21-a7d2-7df3b913c7d7" name="Changes" comment="添加工具类">
+      <change afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/properties/UserProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/security/GjUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/UserStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/bean/SecurityOAuth2User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/core/GjUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-ai/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-ai/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gj-cloud-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/src/main/java/com/gj/cloud/common/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/user/domain/MemberDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/user/domain/MemberDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/bootstrap-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/GjCloudAuthApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/config/MybatisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/config/RedisTemplateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/properties/JwtCAProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/user/domain/MemberDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-auth/target/classes/com/gj/cloud/auth/user/service/GjUserDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/GjCloudBaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/GjCloudBaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/BaseSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/constant/RequestMapperConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/constant/RequestMapperConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/PdfToWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/file/PdfToWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/bean/DemoBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/controller/DemoControllerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/mapper/DemoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/mapper/DemoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/service/DemoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/service/DemoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/bean/UserBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/controller/UserControllerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/user/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/home/bean/HomeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/home/bean/HomeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/home/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/home/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/home/controller/HomeControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/home/controller/HomeControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/bean/AdminUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/bean/AdminUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/bean/BaseUserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/bean/BaseUserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/mapper/BaseUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/mapper/BaseUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/mapper/BaseUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/mapper/BaseUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/service/BaseUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/service/BaseUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/service/BaseUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/service/BaseUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-base/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-base/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-gateway/src/main/java/com/gj/cloud/gateway/filter/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-gateway/src/main/java/com/gj/cloud/gateway/filter/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-autoconfigure/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gj-cloud-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gj-cloud-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,43 +104,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.WebSecurityConfig.executor": "Run",
-    "Maven.gj-cloud [clean].executor": "Run",
-    "Maven.gj-cloud-base [clean].executor": "Run",
-    "Maven.gj-cloud-common [clean].executor": "Run",
-    "Maven.gj-cloud-starter [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.GjCloudAiApplication.executor": "Debug",
-    "Spring Boot.GjCloudAuthApplication.executor": "Debug",
-    "Spring Boot.GjCloudAutoconfigureApplication.executor": "Run",
-    "Spring Boot.GjCloudBaseApplication.executor": "Debug",
-    "Spring Boot.GjCloudGatewayApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/work/gj-cloud/gj-cloud-common/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.27931035",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.WebSecurityConfig.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud-autoconfigure [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud-base [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud-common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud-common [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gj-cloud-starter [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GjCloudAiApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GjCloudAuthApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GjCloudAutoconfigureApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GjCloudBaseApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GjCloudGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/work/gj-cloud/gj-cloud-common/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27931035&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -113,6 +153,7 @@
       <recent name="E:\work\gj-cloud\gj-cloud-auth\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\gj-cloud\gj-cloud-base\src\main\java\com\gj\cloud\base\file" />
       <recent name="E:\work\gj-cloud" />
       <recent name="E:\work\gj-cloud\gj-cloud-starter" />
       <recent name="E:\work\gj-cloud\gj-cloud-starter\gj-cloud-autoconfigure\src\main\resources" />
@@ -128,7 +169,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebSecurityConfig">
+  <component name="RunManager" selected="Spring Boot.GjCloudBaseApplication">
     <configuration name="WebSecurityConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gj.cloud.auth.config.WebSecurityConfig" />
       <module name="gj-cloud-auth" />
@@ -210,7 +251,10 @@
       <workItem from="1742615418456" duration="5266000" />
       <workItem from="1742735558378" duration="43657000" />
       <workItem from="1743868040258" duration="7028000" />
-      <workItem from="1743913415362" duration="22086000" />
+      <workItem from="1743913415362" duration="52258000" />
+      <workItem from="1744034802084" duration="5000" />
+      <workItem from="1744034845869" duration="2207000" />
+      <workItem from="1744037092010" duration="3942000" />
     </task>
     <task id="LOCAL-00001" summary="重命名auth服务">
       <option name="closed" value="true" />
@@ -252,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743920529648</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加工具类">
+      <option name="closed" value="true" />
+      <created>1743954071439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743954071439</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +327,8 @@
     <MESSAGE value="调整项目架构" />
     <MESSAGE value="清理.gitignore" />
     <MESSAGE value="新增用户" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增用户" />
+    <MESSAGE value="添加工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加工具类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -287,28 +340,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/config/WebSecurityConfig.java</url>
-          <line>111</line>
+          <line>90</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gj-cloud-auth/src/main/java/com/gj/cloud/auth/config/WebSecurityConfig.java</url>
-          <line>82</line>
+          <line>61</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/service/BaseUserServiceImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/controller/BaseUserControllerImpl.java</url>
           <line>25</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SecurityConfig.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-config/6.4.4/spring-security-config-6.4.4-sources.jar!/org/springframework/security/config/annotation/AbstractConfiguredSecurityBuilder.java</url>
@@ -319,6 +362,111 @@
           <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
           <line>84</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/config/SecurityConfig.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/FilterChainProxy.java</url>
+          <line>213</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/component/JwtAuthenticationTokenFilter.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/savedrequest/RequestCacheAwareFilter.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/access/intercept/AuthorizationFilter.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-starter/gj-cloud-security/src/main/java/com/gj/cloud/security/component/RestAuthenticationEntryPoint.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/FilterChainProxy.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/access/intercept/RequestMatcherDelegatingAuthorizationManager.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/access/intercept/AuthorizationFilter.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/bean/AdminUserDetails.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/authentication/AnonymousAuthenticationFilter.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/access/intercept/AuthorizationFilter.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/config/BaseSecurityConfig.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/demo/controller/DemoControllerImpl.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4-sources.jar!/org/springframework/security/web/access/intercept/AuthorizationFilter.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/work/user/service/BaseUserServiceImpl.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-core/6.4.4/spring-security-core-6.4.4-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/security/GjUserDetailsService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../repository/org/mybatis/mybatis/3.5.17/mybatis-3.5.17.jar!/org/apache/ibatis/binding/MapperProxy.class</url>
+          <line>47</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gj-cloud-base/src/main/java/com/gj/cloud/base/GjCloudBaseApplication.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

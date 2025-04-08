@@ -44,27 +44,6 @@ public class WebSecurityConfig {
         return new GjUserDetailService();
     }
 
-    /**
-     * 初始化身份验证管理器
-     */
-    @Bean
-    public AuthenticationManager authenticationManagerBean(AuthenticationConfiguration config) throws Exception {
-        return config.getAuthenticationManager();
-    }
-
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http, AuthenticationConfiguration config) throws Exception {
-        http.userDetailsService(userDetailsService())
-                .authenticationManager(authenticationManagerBean(config));
-
-        return http.build();
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
     public static void main(String[] args) {
         System.out.println(new BCryptPasswordEncoder().encode("admin"));
     }

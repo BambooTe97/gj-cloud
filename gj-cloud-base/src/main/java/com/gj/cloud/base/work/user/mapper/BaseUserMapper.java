@@ -1,10 +1,8 @@
 package com.gj.cloud.base.work.user.mapper;
 
-import com.github.pagehelper.PageInfo;
 import com.gj.cloud.base.work.user.bean.BaseUserBean;
-import com.gj.cloud.base.work.user.bean.BaseUserDTO;
 import com.gj.cloud.base.work.user.bean.UmsAdminExample;
-import org.mapstruct.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -16,6 +14,8 @@ public interface BaseUserMapper {
     int insert(BaseUserBean user);
 
     BaseUserBean selectById(Long id);
+
+    BaseUserBean queryUserByUsername(String username);
 
     /**
      * 删除

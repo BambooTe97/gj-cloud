@@ -7,18 +7,25 @@
         <groupId>com.gj.cloud</groupId>
         <artifactId>gj-cloud</artifactId>
         <version>2025.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>gj-cloud-auth</artifactId>
     <version>2025.0.0</version>
     <name>gj-authcenter</name>
     <description>认证中心,专门给网关授权认证的</description>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>17</java.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.gj.cloud</groupId>
+            <artifactId>gj-cloud-common</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

@@ -32,7 +32,7 @@
     <sql id="Base_Column_List">
         id, username, password, nickname, sex, orgid, orgname,
           birthday, email, mobile, tel, post, title, education, idcard,
-          asswordupdatedtime, logintime, status, createdbyid, createdbyname,
+          passwordupdatedtime, logintime, status, createdbyid, createdbyname,
           createdtime, createdbyorgid, createdbyorgname
     </sql>
     <insert id="insert">
@@ -75,6 +75,10 @@
     </update>
     <select id="selectById" resultType="com.gj.cloud.base.work.user.bean.BaseUserBean">
         SELECT * FROM BASE_USER WHERE ID = #{id};
+    </select>
+
+    <select id="queryUserByUsername" resultType="com.gj.cloud.base.work.user.bean.BaseUserBean">
+        SELECT * FROM ums_admin WHERE username = #{username};
     </select>
 
     <sql id="Example_Where_Clause">
