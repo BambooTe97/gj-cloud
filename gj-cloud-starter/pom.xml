@@ -19,6 +19,7 @@
         <module>gj-cloud-common</module>
         <module>gj-cloud-autoconfigure</module>
         <module>gj-cloud-security</module>
+        <module>gj-cloud-scheduler</module>
     </modules>
 
 </project>

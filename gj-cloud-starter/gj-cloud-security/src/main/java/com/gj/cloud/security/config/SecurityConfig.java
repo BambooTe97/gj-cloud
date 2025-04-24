@@ -48,12 +48,15 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/api/v1/home/info").permitAll()
-                        .requestMatchers("/api/v1/users/queries").permitAll()
+//                        .requestMatchers("/api/v1/users/queries").permitAll()
                         .requestMatchers("/user/login").permitAll() // 只有 /user/login 的 url 可以任意访问请求
 //                        .requestMatchers("/admin/**").hasRole("ADMIN")
 //                        .requestMatchers("/**").hasRole("USER")
                         // 任何请求都需要身份验证
                         .anyRequest().authenticated())
+                .oauth2Login(oauth2 -> oauth2
+                        .successHandler(authenticationSuccessHandler())
+                        .failureHandler(authenticationFailureHandler()))
                 // 异常处理
                 .exceptionHandling((authEntry) ->
                         authEntry.authenticationEntryPoint(restAuthenticationEntryPoint()))
